@@ -1,0 +1,17 @@
+use schoolLibrary
+switched to db schoolLibrary
+db.Book.insert({title:"Introduction to Science",author:"Dr.Smith",available:true})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a7d5c3b5159d65d9b93521d')
+  }
+}
+show collections
+Book
+db.Book.drop()
+true
+db.dropDatabase()
+{ ok: 1, dropped: 'schoolLibrary' }
+schoolLibrary
