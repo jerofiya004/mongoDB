@@ -1,0 +1,17 @@
+use BakeryShop
+switched to db BakeryShop
+db.Orders.insert({customerName:"Alice Johnson",item:"Chocolate Cake",quantity:2,totalPrice:500})
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a7d5ee2ad20ed2c132a9097')
+  }
+}
+show collections
+Orders
+db.Orders.drop()
+true
+db.dropDatabase()
+{ ok: 1, dropped: 'BakeryShop' }
+BakeryShop
